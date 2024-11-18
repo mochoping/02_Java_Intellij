@@ -25,6 +25,6 @@ public class ScannerPre3 {
         System.out.print("숫자 2번 : ");
         int num2 = sc.nextInt();
 
-        System.out.println("숫자 합 : "+ num1+num2);
+        System.out.println("숫자 합 : "+ (num1+num2));
     }
 }
