@@ -14,7 +14,8 @@ public class Practice1 {
         System.out.println("문자 : " + text);
         System.out.println("유니코드 : " + uni);
 
-
+        // 스캔이 모두 종료되면 닫아주기
+        sc.close(); // 스캐너를 모두 사용하면 닫아주는것이 좋음
 
     }
 }

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/00_javaStart/00_javaStart.iml" filepath="$PROJECT_DIR$/00_javaStart/00_javaStart.iml" />
       <module fileurl="file://$PROJECT_DIR$/01_varible/01_varible.iml" filepath="$PROJECT_DIR$/01_varible/01_varible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_operator/02_operator.iml" filepath="$PROJECT_DIR$/02_operator/02_operator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
     </modules>
   </component>

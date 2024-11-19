@@ -1,13 +1,7 @@
 package com.variable.practice;
 
-//import java.util.Scanner;
-
-import java.util.Scanner;
-
 public class Practice3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
 
                 int iNum1 = 10;
                 int iNum2 = 4;
@@ -18,36 +12,45 @@ public class Practice3 {
 
                 System.out.println( iNum1 % iNum2 ); // 2
 
-                int dnum = (int) dNum;
-                System.out.println( dNum ); // 2
-
-
+                int n0 = (int) dNum;
+                System.out.println( n0 ); // 2
+                //System.out.println( (int)dNum );
                 System.out.println( iNum2*dNum ); // 10.0
 
-                float inum1 = (float) iNum1;
-                System.out.println( iNum1 ); // 10.0
+                float n1 = (float) iNum1;
+                System.out.println( n1 ); // 10.0
+                //System.out.println( (float)iNum1 );
 
-                System.out.println( iNum1 iNum2 ); // 2.5
+                double n2 = (double) iNum2;
+                double result1 = iNum1 / n2;
+                System.out.println( result1 ); // 2.5
+                //System.out.println( iNum1/(double)iNum2 );
 
                 System.out.println( dNum ); // 2.5
 
-                System.out.println( fNum ); // 3
+                int n3 = (int) fNum;
+                System.out.println( n3 ); // 3
 
-                int fnum = (int) fNum;
-                int result0 = inum1/int fnum;
-                System.out.println( iNum1/fNum ); // 3
+                int n4 = (int) fNum;
+                System.out.println( iNum1/n4 ); // 3
+                //나머지 연산 System.out.println( iNum1%(int)fNum );
+                float n5 = iNum1 /fNum;
+                System.out.println( n5 );// 3.3333333 f
 
-                System.out.println( iNum1 fNum );// 3.3333333 f
-
-                System.out.println( iNum1 fNum ); // 3.3333333333333335 d
+                double n6 = (double)(iNum1 /fNum);
+                System.out.println( n6 ); // 3.3333333333333335 d
 
                 System.out.println( ch ); // 'A'
 
-                System.out.println( ch ); // 65
+                int uni = (int)ch;
+                System.out.println( uni ); // 65
 
-                System.out.println( ch iNum1 ); // 75
+                System.out.println( uni+iNum1 ); // 75
 
-                System.out.println( (ch iNum1) ); // 'K'
+                int n7= uni+iNum1;
+                char C1 = (char)(n7); // 숫자는 변경되는데, int는 안됨
+                System.out.println( C1 ); // 'K'
+            // System.out.println( (char) (ch + iNum1) ); // 'K'
 
 
 

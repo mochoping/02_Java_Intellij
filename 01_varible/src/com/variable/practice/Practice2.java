@@ -1,6 +1,7 @@
 package com.variable.practice;
-
+// 자동정렬 단축키 ctrl + alt + L
 import java.util.Scanner;
+
 public class Practice2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,9 +14,10 @@ public class Practice2 {
         int math = sc.nextInt();
 
         int total = korean + english + math;
-        int evg = (korean + english + math)/3;
+        int evg = (korean + english + math) / 3;
 
         System.out.println("총점 : " + total);
         System.out.println("평균 : " + evg);
+        sc.close();
     }
 }
