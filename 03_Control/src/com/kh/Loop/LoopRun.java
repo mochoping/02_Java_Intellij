@@ -13,7 +13,10 @@ public class LoopRun {
         //l2.while1();
         //l2.while2();
         //l2.while3();
-        l2.while4();
+        //l2.while4();
+
+        Menu m = new Menu();
+        m.order();
     }
 
     /*
