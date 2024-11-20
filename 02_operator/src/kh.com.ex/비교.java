@@ -31,21 +31,23 @@ public 비교 {
     **객체 : 어떤 객, 몸 체, 어떤 물체
 
 
+    .euqalsIgnoreCase()
+    대소문자를 구분하지 않고 문자열을 비교하는 메서드
+    사용예제 : 사용자가 yes . YES, YeS 등의 다양한 입력은 스팰링만으로 구분하여 동일하게 처리할 때 사용
+
+    String a ="Hello";
+    String b ="hello";
+    a.euqalsIgnoreCase(b); // true
+    b.euqalsIgnoreCase("hi") // false
+
+    .equals() .euqalsIgnoreCase() 차이
+    .equals() = 문자열 내용이 대소문자까지 정확히 일치해야함.
+                아이디 비밀번호
+    .euqalsIgnoreCase() = 문자열 내용이 대소문자 구분없이 일치로 간주
+                        일정한 응답표기를 각자 다른표현으로 진행할 때 사용
+
+
 
 
      */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

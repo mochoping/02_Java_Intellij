@@ -16,7 +16,10 @@ public class LoopRun {
         //l2.while4();
 
         Menu m = new Menu();
-        m.order();
+        //m.order();
+
+        LoopDoWhile ld = new LoopDoWhile();
+        ld.method1();
     }
 
     /*
