@@ -6,6 +6,7 @@ public class Practice1Run {
 
        // P.method1();
         //P.method2();
-        P.method3();
+        //P.method3();
+        P.method10();
     }
 }
