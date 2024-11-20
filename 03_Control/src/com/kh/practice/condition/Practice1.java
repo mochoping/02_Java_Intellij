@@ -136,7 +136,8 @@ public class Practice1 {
 
     public void method10() {
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        boolean is = true;
+        while (is) {
             System.out.println("실행할 기능을 선택하세요.");
             System.out.println("1. 메뉴 출력");
             System.out.println("2. 짝수/홀수");
@@ -167,16 +168,61 @@ public class Practice1 {
                 case 5:
                     method5();
                     break;
-                    case 3: case 6: case 7: case 8: case 9:
+                case 6:
+                    method6();
+                    break;
+                    case 3: case 7: case 8: case 9:
                         System.out.println("기능 준비중입니다.");
                         break;
                 case 0:
                     System.out.println("프로그램을 종료합니다.");
+                    is = false;
                     //while 옆에 true 로 적힌 부분을 변수 isTure에 담아서
                     //추후에 isTure = false 로 표현해서 종료하게 만들기
                     break;
                 default:
                     System.out.println("정확한 번호를 입력해주세요.");
+            }
+        }
+    }
+    /*
+    * 관리자 : 회원관리, 게시글관리, 게시글작성, 게시글조회, 댓글 작성
+    * 회원  : 게시글 작성, 게시글조회, 댓글 작성
+    * 비회원 : 게시글조회
+    *
+    * */
+
+    /*
+    * if("관리자".equals(role))
+    *
+    * sc.nextline(); =  엔터 날림 처리
+    *
+    * */
+    public void method6() {
+        Scanner sc = new Scanner(System.in);
+        boolean is = true;
+        while(is) {
+            System.out.println("회원 등급에는 관리자, 회원, 비회원이 있습니다.");
+            System.out.println("메뉴로 돌아가고자 하면 메뉴를 입력해주세요.");
+            System.out.print("권한을 확인하고자 하는 회원 등급을 입력해주세요. : ");
+            String autho = sc.next();
+            switch (autho) {
+                case "관리자":
+                    System.out.println(autho + " 등급은 회원관리, 게시글관리, 게시글작성, 게시글조회, 댓글 작성이 가능합니다.");
+                    continue;
+                case "회원":
+                    System.out.println(autho + " 등급은 게시글작성, 게시글조회, 댓글 작성이 가능합니다.");
+                    continue;
+                case "비회워":
+                    System.out.println(autho + " 등급은 게시글조회가 가능합니다.");
+                    continue;
+                case "메뉴":
+                    System.out.println("메인메뉴로 돌아갑니다.");
+                    is = false;
+                    break;
+                default:
+                    System.out.println("정확한 명령어를 입력해주세요.");
+                    continue;
             }
         }
     }

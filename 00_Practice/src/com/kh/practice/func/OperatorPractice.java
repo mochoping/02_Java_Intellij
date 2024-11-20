@@ -19,5 +19,21 @@ public class OperatorPractice {
 
 
     }
-    public void practice2() {}
+    public void practice2() {
+        System.out.println("숫자를 입력하세요 : ");
+        int a = sc.nextInt();
+        String result = "음양수";
+        if (a > 0){
+            result = "양수다.";
+        } else if (a == 0) {
+            result = "0이다.";
+        } else {
+            result = "음수다.";
+        }
+        System.out.println(result);
+    }
+    public void practice3() {
+
+
+    }
 }
