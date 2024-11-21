@@ -1,0 +1,38 @@
+package com.kh.oop.methodex;
+
+public class Void메서드 {
+
+    //1. 매개변수 없이 전달할 이유도 없음 기능만 실행
+    public void method1(){
+        System.out.println("안뇽하세요.");
+    }
+    //2. 매개변수가 존재하는 void 메서드
+    /*
+    매개변수명은 지역변수로 오직 메서드 내부에서.
+    자료형을 전달하는 변수명의 역활을 주로 하기 때문에
+    어떤 이름을 널든 문제는 없다.
+    public void method2(String 값이들어올공간만들어주기){
+        System.out.println("안녕하세요, "+ 들어온값보여주기 + " 님");
+    }
+
+     */
+    public void method2(String userId){
+        System.out.println("안녕하세요, "+ userId + " 님");
+    }
+    public void method3(int age){
+        System.out.println(age +" 세 입니다.");
+    }
+    // 자료형과 매개변수가 두 개 이상 들어가는 메서드
+    // 이름을 문자열로 받고, 나이를 int로 받는다.
+    public void method4(String name, int age){
+        // 00님의 나이는 00 이군요
+        System.out.println(name + " 님의 나이는 " + age +" 세 입니다.");
+    }
+
+    public void login(String id,String pw){
+
+        System.out.println("아이디는 " +id + " 입니다.");
+        System.out.println("비밀번호는 " + pw + " 입니다.");
+    }
+
+}
