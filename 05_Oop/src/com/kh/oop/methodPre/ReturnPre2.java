@@ -72,21 +72,19 @@ public class ReturnPre2 {
     //(향상된 for문과 +=문     sum / numbers.length 활용)
     //문제: 주어진 배열의 평균값을 아래와 같이 출력하세요.
     //출력 결과: 배열: [10, 20, 30, 40, 50] 평균값: 30.0
-    /*
+
     public String method5(int[] arr){
             int sum = 0;
-
+            String total ="";
             double even = sum/(arr.length);
         for(int i = 0; i<arr.length; i++){
                 sum += arr[i];
-            }
-            for(int line:arr){
+                total += String.valueOf(arr[i])+" ";
+        }
 
-                String total = toString(line);
-            }
         return "배열: "+total+ " 평균값: "+ even;
     }
-*/
+
     //6. 주어진 나이가 성인인지 확인하고 메시지 반환
     //(삼항연산자나 if문 활용)
     //문제: 나이를 입력받아 성인 여부를 판단하고 메시지를 출력하세요.
@@ -120,6 +118,23 @@ public class ReturnPre2 {
         }
         return "배열: "+ a + " 찾는 문자열: "+ b +" 결과: 배열에 "+b+"이(가) 존재합니다.";
     }
+
+    /*
+    * boolean found = false;
+    *
+    *for(String str : arr){
+    * if(str.equals(target)){
+    *       found = true;
+    *       break;
+    *   }
+    * }
+    * if (found) {
+    *  return "배열에 " + target +"이(가) 존재합니다.;
+    * } else {
+    *  return "배열에 " + target +"이(가) 존재하지 않습니다.;
+    * }
+    *
+    * */
     //9. 반지름을 입력받아 원의 넓이 반환
     //(반지름을 입력받아 원의 넓이를 구하는 공식:  Math.PI * radius * radius)
     //문제: 원의 반지름을 입력받아 원의 넓이를 계산하여 출력하세요.

@@ -19,10 +19,10 @@ public class ReturnRun1 {
         //System.out.println(r1.sub(x,y));
         //System.out.println(r1.mul(x,y));
         //System.out.println(r1.div(y,x));
-        //int[] a={10, 20, 30, 40, 50};
+        int[] a={10, 20, 30, 40, 50};
         String[] z={"apple", "banana", "cherry"};
         ReturnPre2 r2 = new ReturnPre2();
-        //r2.method5(a);
+        r2.method5(a);
         r2.intro("홍길동",40);
         r2.compare(123,456);
         r2.abcdef(85);
@@ -44,5 +44,6 @@ public class ReturnRun1 {
         System.out.println(r2.method6(17));
         System.out.println(r2.method7("Hello","world"));
         System.out.println(r2.method8(z,"banana"));
+        System.out.println(r2.method5(a));
     }
 }
