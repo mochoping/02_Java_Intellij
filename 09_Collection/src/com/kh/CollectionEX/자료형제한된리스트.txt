@@ -1,0 +1,23 @@
+리스트안에 지정된 자료형만 넣을 수 있음.
+
+자료형을 제한할 때는 기본자료형을 클래스화 한 자료형을 가져와서 사용.
+Wrapper class = 기본타입을 객체처럼 사용할 수 있도록 감싸는 클래스
+기본타입  래퍼클래스
+ArrayList<String>  list1 = new ArrayList<String>();
+int -> Integer
+ArrayList<Integer>  list1 = new ArrayList<Integer>();
+char -> Character
+ArrayList<Character>  list1 = new ArrayList<Character>();
+boolean -> Boolean
+ArrayList<Boolean>  list1 = new ArrayList<Boolean>();
+double -> Double
+ArrayList<Double>  list1 = new ArrayList<Double>();
+float -> Float
+ArrayList<Float>  list1 = new ArrayList<Float>();
+long ->Long
+ArrayList<Long>  list1 = new ArrayList<Long>();
+short ->Short
+ArrayList<Short>  list1 = new ArrayList<Short>();
+byte -> Byte
+ArrayList<Byte>  list1 = new ArrayList<Byte>();
+

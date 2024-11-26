@@ -1,11 +1,13 @@
-package com.kh.poly.pack2.bookPre;
+package com.kh.CollectionEX.pack1.listEx;
 
 public class Book {
-    String title;
-    String author;
-    int price;
+    private String title;
+    private String author;
+    private int price;
 
-    public Book(){}
+    public Book() {
+    }
+
     public Book(String title, String author, int price) {
         this.title = title;
         this.author = author;
@@ -38,12 +40,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return "title='" + title +
-                ", author='" + author +
-                ", price=" + price +" ";
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", price=" + price +
+                '}';
     }
-
-    /*
-    부모클래스에서 toString이 없다면 주소값이 나가게됨.
-     */
 }
