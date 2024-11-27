@@ -19,3 +19,7 @@ indexOf(Object O ) : 지정된 요소의 첫번째 인덱스를 반환
 clear() : 리스트의 모든요소 삭제
 addAll(Collection c) : 다른 컬렉션의 모든 요소를 복사해서 추가
 subList(int, int)    : 특정 자리 범위 값을 추출해서 새로운리스트를 만듬
+
+
+
+

@@ -1,0 +1,23 @@
+
+중복 데이터를 허용하지 않고, 저장된 요소의 순서를 유지하지 않는 자료구조
+데이터를 효율적으로 저장하고 검색하기 위해 사용됨
+
+주요특징
+1. 동일한 값이 이미 존재하면 추가되지 않음
+
+2. 저장된 순서를 유지하지 않고, 내부적으로 Hashing 기법 사용
+
+3.null 값 혀용, 대신 최초 1회만 저장가능
+
+ex)바지주머니 물건 넣는것. 중복은 안됨
+
+주요 메서드
+add(E e)
+remove(Object O) 지정된 요소 삭제
+size()
+isEmpty()
+contains(Object O)
+clear()
+addAll(Collection c)
+iterator() : Iterator 를 반환해 순차적으로 회전 (for 문 대신) 가능
+

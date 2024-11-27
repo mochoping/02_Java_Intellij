@@ -28,6 +28,11 @@ Collection (상위 인터페이스)
  │     ├── HashSet
  │     ├── TreeSet (정렬 지원)
  │     └── LinkedHashSet (삽입 순서 유지)
+                        순서가 중요하지 않을경우 Hashset
+                        Treeset 정렬된 상태가 필요할때
+                        LinkedHashset 삽입순서를 유지해야할때
+
+
  └── Queue: 순서에 따라 처리되는 컬렉션
        ├── PriorityQueue (우선순위 큐)
        └── Deque (양방향 큐)
