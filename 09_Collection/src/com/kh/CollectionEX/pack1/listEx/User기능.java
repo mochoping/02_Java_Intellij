@@ -11,14 +11,14 @@ public class User기능 {
     private Scanner sc = new Scanner(System.in);
 
     //3. 사용자 추가기능 만들기
-    public void addUser() {
-        System.out.println("등록할 아이디를 입력해주세요 : ");
+    public void addUser(String name,String password,String email) {
+        /*System.out.println("등록할 아이디를 입력해주세요 : ");
         String name = sc.nextLine();
         System.out.println("비밀번호를 입력해주세요 : ");
         String password = sc.nextLine();
         System.out.println("이메일주소를 입력해주세요 : ");
-        String email = sc.nextLine();
-        User u1 = new User(name,password,email);
+        String email = sc.nextLine();*/
+      //  User u1 = new User(name,password,email);
         usersList.add(new User(name,password,email));
         System.out.println("[ "+name+" ] 님 등록 완료!");
     }

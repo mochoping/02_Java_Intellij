@@ -19,13 +19,13 @@ public class User기능실행 {
 
             switch (choice) {
                 case 1:
-                    /*System.out.println("등록할 아이디를 입력해주세요 : ");
+                    System.out.println("등록할 아이디를 입력해주세요 : ");
                     String name = sc.nextLine();
                     System.out.println("비밀번호를 입력해주세요 : ");
                     String password = sc.nextLine();
                     System.out.println("이메일주소를 입력해주세요 : ");
-                    String email = sc.nextLine();*/
-                    userStore.addUser();
+                    String email = sc.nextLine();
+                    userStore.addUser(name,password,email);
                     break;
                 case 2:
                     userStore.allusers();
