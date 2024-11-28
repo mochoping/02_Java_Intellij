@@ -6,7 +6,7 @@ public class DrinkServiceRun {
     public static void main(String[] args) {
         DrinkService drinkService = new DrinkService();
         Scanner scanner = new Scanner(System.in);
-
+/*
         while (true) {
             System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
             System.out.println("★★★★★★★★★★★★음료 공장 메뉴★★★★★★★★★★★");
@@ -55,7 +55,7 @@ public class DrinkServiceRun {
                     System.out.print("잘못 번호를 입력했습니다. 다시 입력해주세요.");
                     break;
             }
-        }
+        }*/
 
 
     }

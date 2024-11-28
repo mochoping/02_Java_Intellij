@@ -27,7 +27,7 @@ public class 회원기능 {
         }
     }
     //4 회원 검색 기능
-    public void searchUser(){
+    public void searchUser(int id){
         for(회원 user : userList){
             if(user.getId() ==id){
                 System.out.println(user);

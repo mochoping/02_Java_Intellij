@@ -51,8 +51,8 @@ public class Menu {
     public boolean equals(Object o) {
         if(!(o instanceof Menu)) return false;
         return id == Menu.if&& double.compare(price, Menu);
-        */
-    }
+
+    }*/
 }
 
 
