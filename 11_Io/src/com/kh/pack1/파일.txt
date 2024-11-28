@@ -1,0 +1,51 @@
+File 클래스
+
+java.io 폴더 내부에 존재하는 java파일
+
+파일/ 디렉토리(폴더)를 관리하는 클래스
+(파일/ 디렉토리 존재유무 관계없음)
+
+- 파일 생성 , 제거, 이름, 크기, 마지막 수정일, 존재여부등의 기능 제공
+
+
+File 클래스 메서드
+boolean mkdir()         : 하나의 디렉토리(폴더)생성 (make directory)
+boolean mkdirs()        : 경로상의 디렉토리(폴더)생성 (make directorys)
+boolean createNewFile() : 파일 생성
+boolean delete()        : 파일 / 디렉토리 삭제
+String getName()        : 파일 이름 반환
+String parent()         : 파일이 저장된 폴더 반환
+String getPath()        : 전체 경로 반환
+boolean isFile()        : 현제File 객체가 관리하는게 파일이면 T
+boolean isDirectory()   : 현제File 객체가 관리하는게 디렉토리면 T
+boolean exists()        : 파일 / 디렉토리가 존재하면 T
+long    length()        :  파일 크기 변환
+long    lastModified()  : 파일 마지막 수정일 (1970.01.01 09:00 부터 지난시간을 ms 단위로 반환)
+String[] list()         : 디렉토리내 파일 목록을 String[] 배열로 반환
+File[] listFiles()      : 디렉토리내 파일 목록을 File[] 배열로 반환
+
+
+        C:/Users/user1/Desktop>
+        System.getProperty("user.home") = 현재 사용하는 유저의 바탕화면 오기전의 폴더 설정
+        File 폴더 = new File(System.getProperty("user.home")+ "/Desktop/newFolders")
+
+
+        File 폴더 = new File("/newFolder");
+
+        System.out.println("폴더 위치               : "+ 폴더.getPath());
+        System.out.println("폴더 절대경로           : "+ 폴더.getAbsolutePath());
+        C:\newFolder
+        System.out.println("폴더 이름               : "+ 폴더.getName());
+        System.out.println("폴더가 존재하는지 확인  : "+ 폴더.exists());
+        폴더생성
+
+        [개발자 상식]
+        os 운영체계
+        윈도우는 백슬래시
+        리눅스 맥은 슬래시
+        자바는 \/ 혼용 가능.
+        되도록/ 권장
+        기준  윈도우  c:/
+        리눅스 맥 /users
+
+        2 상대경로, 현재위치를 기준으로 목표까지의 경로를 표기하는 방법
