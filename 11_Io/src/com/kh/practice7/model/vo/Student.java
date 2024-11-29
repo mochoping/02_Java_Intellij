@@ -3,7 +3,7 @@ package com.kh.practice7.model.vo;
 public class Student {
 
     private String name;
-    private String className;
+    private String subject;
     private int points;
 
     public Student() {
@@ -11,7 +11,7 @@ public class Student {
 
     public Student(String name, String className, int points) {
         this.name = name;
-        this.className = className;
+        this.subject = className;
         this.points = points;
     }
 
@@ -23,12 +23,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getClassName() {
-        return className;
+    public String getsubject() {
+        return subject;
     }
 
-    public void setClassName(String className) {
-        this.className = className;
+    public void setsubject(String className) {
+        this.subject = className;
     }
 
     public int getPoints() {
@@ -43,7 +43,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", className='" + className + '\'' +
+                ", subject='" + subject + '\'' +
                 ", points=" + points +
                 '}';
     }
