@@ -1,7 +1,6 @@
-package com.kh.pack3.pre;
+package com.kh.pack2.pre4;
 
-//import readEx.FileManager;
-
+import java.io.*;
 import java.util.Scanner;
 
 public class FileManagerRun {
@@ -9,8 +8,8 @@ public class FileManagerRun {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        fileManager fileManager = new fileManager();
-        String path = System.getProperty("user.home") + "/Desktop";
+        FileManager fileManager = new FileManager();
+        String path = System.getProperty("user.home") + "/Desktop/";
 
         while (true) {
             System.out.println("\n메뉴:");
