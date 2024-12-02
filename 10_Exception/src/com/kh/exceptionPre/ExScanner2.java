@@ -40,9 +40,7 @@ public class ExScanner2 {
         }
 
 
-        try {
 
-        }
     }
 
 
